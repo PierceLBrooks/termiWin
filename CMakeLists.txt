@@ -30,6 +30,6 @@ add_library(termiwin_static STATIC ${MAIN_SRC})
 set_target_properties(termiwin_static PROPERTIES OUTPUT_NAME termiwin)
 
 # Install rules
-install(TARGETS termiwin_shared CONFIGURATIONS Release LIBRARY DESTINATION lib PUBLIC_HEADER DESTINATION include)
-install(TARGETS termiwin_static CONFIGURATIONS Release ARCHIVE DESTINATION lib)
+install(TARGETS termiwin_shared)
+install(TARGETS termiwin_static)
 install(FILES ${INCLUDE_FILES} DESTINATION include)
